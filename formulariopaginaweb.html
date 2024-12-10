@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		 <meta charset="UTF-8">
+         <title>Datos Jugadores</title>
+	</head>
+	<body>
+        <h1>Formulario de Registro Jugadores</h1>
+        <form action="" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellido1">Primer Apellido:</label>
+            <input type="text" id="apellido1" name="apellido1" required><br><br>
+
+            <label for="apellido2">Segundo Apellido:</label>
+            <input type="text" id="apellido2" name="apellido2"><br><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="text" name="email0" id="email" required><br><br>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+
+            <label for="equipo">Equipo de procedencia:</label>
+            <input type="text" id="equipo" name="equipo"><br><br>
+
+
+            <label for="posicion">Posición:</label>
+            <select id="posicion" name="posicion">
+                <option value="masculino">Portero</option>
+                <option value="femenino">Defensa</option>
+                <option value="otro">Mediocentro</option>
+                <option value="otro">Delantero</option>
+
+            </select><br><br>
+
+
+            <label for="dorsal">Dorsal:</label>
+            <input type="number" id="dorsal" name="dorsal" min="0" max="20"><br><br>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                Acepto recibir informacion al correo electrónico.
+            </label><br><br>
+
+
+
+
+
+
+            <button type="submit">Enviar</button>
+        </form>
+
+		
+	</body>
+</html>
